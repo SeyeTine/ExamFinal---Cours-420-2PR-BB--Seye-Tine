@@ -61,5 +61,17 @@ class InterfaceGraphique(objet):
         self.lineEdit1.setGeometry(QtCore.QRect(20, 100, 140, 30))
         self.lineEdit1.setReasOnly(True)
 
+        #Bouton pour calculer le double
+        self.button1 = QtWidgets.QPushButton("Valider l'opération", Form)
+        self.button1.setGeometry(QtCore.QRect(20, 100, 140, 30))
+        self.button1.clicked.connect(self.valider)
+        #Bouton pour sauvegarder le resultat
+        self.button2 = QtWidgets.QPushButton("Sauvegarder", Form)
+        self.button2.setGeometry(QtCore.QRect(170, 100, 120, 30))
+        self.button2.clicked.connect(self.sauvegarder)
+        #Bouton pour charger le resultat
+        self.button3 = QtWidgets.QPushButton("Charger", Form)
+        self.button3.setGeometry(QtCore.QRect(20, 100, 140, 30))
+        self.button3.clicked.connect(self.charger)
 
 
