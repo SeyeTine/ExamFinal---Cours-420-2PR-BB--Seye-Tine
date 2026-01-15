@@ -39,5 +39,10 @@ def main():
         Ou.somme += n
         Ou.moyenne = Ou.somme /10
 
+    #Affichage des resultats
+    print("le plus petit entier est : ", Ou.min)
+    print("le plus grand entier est : ", Ou.max)
+    print("la somme des 10 entiers est  : ", Ou.somme)
+    print("la moyenne des 10 entiers est : ", Ou.moyenne)
 
 
