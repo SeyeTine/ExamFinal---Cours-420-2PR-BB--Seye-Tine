@@ -6,3 +6,17 @@ class Outils:
         self.max = n
         self.somme = n
         self.moyenne = n
+        self.nbentier = 1
+
+# Definissons les methodes qui permet de retourner nos calculs
+    def minimum(self):
+        return self.min
+    def maximum(self):
+        return self.max
+    def somme(self):
+        return self.somme
+    def moyenne(self):
+        return self.moyenne
+
+
+
