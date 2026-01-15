@@ -1,4 +1,7 @@
 # Creation de la classe outils
+from PyQt6.QtWidgets import QApplication
+
+
 class Outils:
     def __init__(self, n):
         #On initialise ce qu'on veut calculer apres
@@ -17,6 +20,24 @@ class Outils:
         return self.somme
     def moyenne(self):
         return self.moyenne
+
+# Fonction principale
+def main():
+    #Saisir entier 1
+    n=int(input("entrez le nombre entier 1/10 : "))
+    Ou = Outils(n)
+
+    #Saisir les 9 entiers restants
+    for i in range(2, 11):
+        n=int(input(f"entrez le nombre entier {i}/10 : "))
+
+    #On calcule maintenant les nouvelles valeurs de min, max...
+        if n < Ou.min:
+            Ou.min = n
+        if n > Ou.max:
+            Ou.max = n
+        Ou.somme += n
+        Ou.moyenne = Ou.somme /10
 
 
 
