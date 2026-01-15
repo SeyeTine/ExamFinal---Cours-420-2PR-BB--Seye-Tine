@@ -16,3 +16,8 @@ class Etudiant:
 etudiant1=Etudiant("Seye", "Tine", 15)
 etudiant2=Etudiant("Bayla", "Seck", 18)
 etudiant3=Etudiant("Nabou", "Tine", 20)
+
+#Appel de la fonction afficher
+etudiant1.affiche()
+etudiant2.affiche()
+etudiant3.affiche()
