@@ -15,3 +15,10 @@ class Triangle:
         # On ajoute les deux cotés sur une meme ligne
         lignes.append(gauche + " " + droit)
         return lignes
+
+# Cette classe permet d'afficher les lignes
+class Affichage ():
+    def afficher(self, lignes):
+        for ligne in lignes:
+            print(ligne)
+
