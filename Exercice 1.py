@@ -22,3 +22,14 @@ class Affichage ():
         for ligne in lignes:
             print(ligne)
 
+#Creation méthode qui va demander de saisir l'entier n
+
+def main():
+    n = int(input("Saisir un entier n : "))
+    # on crée des objets
+    t=Triangle(n)
+    a=Affichage()
+
+    #On affiche nos deux triangles
+    a.afficher(t.Triangles(t.Triangles()))
+
