@@ -11,3 +11,8 @@ class Etudiant:
         print("Prénom : ", self.prenom)
         print("Nom : ", self.nom)
         print("Note", self.note)
+
+#Création des objets
+etudiant1=Etudiant("Seye", "Tine", 15)
+etudiant2=Etudiant("Bayla", "Seck", 18)
+etudiant3=Etudiant("Nabou", "Tine", 20)
