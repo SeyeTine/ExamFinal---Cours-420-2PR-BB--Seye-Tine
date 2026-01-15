@@ -1,6 +1,7 @@
 import os
 import sys
-from PyQt6.QtWidgets import QApplication, QMessageBox
+from PyQt6.QtWidgets import QApplication, QMessageBox, QWidget, QtCore
+
 
 
 class InterfaceGraphique(objet):
@@ -39,6 +40,26 @@ class InterfaceGraphique(objet):
                 self.lineEdit1.setText(resultat)
         except:
             pass
+
+    #Creation des wifgets
+    def Widgets (self, Form):
+        Form.setObjectName("Form")
+        Form.resize(400, 300)
+        Form.setWindowTitle("Calculer Double")
+        #Label pour saisir N
+        self.label = QtWidgets.QLabel("Entrez la valeur N : ", Form)
+        self.label.setGeometry(QtCore.QRect(20, 20, 150, 30))
+        #Champ pour N
+        self.lineEdit = QtWidgets.QLineEdit(Form)
+        self.lineEdit.setGeometry(QtCore.QRect(180, 20, 100, 30))
+        self.lineEdit.returnPressed.connect(self.valider)
+        #Label pour le doucble
+        self.label1 = QtWidgets.QLabel("Voici le double : ", Form)
+        self.label.setGeometry(QtCore.QRect(20, 60, 150, 30))
+        #Champ pour le double
+        self.lineEdit1 = QtWidgets.QLineEdit(Form)
+        self.lineEdit1.setGeometry(QtCore.QRect(20, 100, 140, 30))
+        self.lineEdit1.setReasOnly(True)
 
 
 
