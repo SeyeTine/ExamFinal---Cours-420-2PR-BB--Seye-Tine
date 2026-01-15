@@ -1,0 +1,25 @@
+# Écrire un programme de votre choix qui illustre le principe de classe.
+# Pendant les cours de POO on nous explique souvent avec la classe voiture ou la classe étudiante
+
+class Etudiant:
+    def __init__(self, prenom, nom, note):
+        self.nom = nom
+        self.prenom = prenom
+        self.note = note
+
+    def affiche(self):
+        print("Prénom : ", self.prenom)
+        print("Nom : ", self.nom)
+        print("Note", self.note)
+
+#Création des objets
+etudiant1=Etudiant("Seye", "Tine", 15)
+etudiant2=Etudiant("Bayla", "Seck", 18)
+etudiant3=Etudiant("Nabou", "Tine", 20)
+
+#Appel de la fonction afficher
+etudiant1.affiche()
+print("*"*20)
+etudiant2.affiche()
+print("*"*20)
+etudiant3.affiche()
