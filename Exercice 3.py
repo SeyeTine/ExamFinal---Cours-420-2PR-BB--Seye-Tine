@@ -1,7 +1,4 @@
 # Creation de la classe outils
-from PyQt6.QtWidgets import QApplication
-
-
 class Outils:
     def __init__(self, n):
         #On initialise ce qu'on veut calculer apres
@@ -9,7 +6,6 @@ class Outils:
         self.max = n
         self.somme = n
         self.moyenne = n
-        self.nbentier = 1
 
 # Definissons les methodes qui permet de retourner nos calculs
     def minimum(self):
@@ -44,5 +40,8 @@ def main():
     print("le plus grand entier est : ", Ou.max)
     print("la somme des 10 entiers est  : ", Ou.somme)
     print("la moyenne des 10 entiers est : ", Ou.moyenne)
+
+if __name__ == "__main__":
+    main()
 
 
