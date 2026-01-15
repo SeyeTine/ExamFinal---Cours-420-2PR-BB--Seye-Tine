@@ -19,5 +19,7 @@ etudiant3=Etudiant("Nabou", "Tine", 20)
 
 #Appel de la fonction afficher
 etudiant1.affiche()
+print("*"*20)
 etudiant2.affiche()
+print("*"*20)
 etudiant3.affiche()
